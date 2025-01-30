@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Texte */
+h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.titre {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.soustitre {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-block-end: 3rem;
+}
+
+.descriptionDroite {
+    float: right;
+    max-width: 50%;
+}
+
+.corps {
+    overflow: hidden;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    clear: both;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        display: block;
+        max-width: 60%;
+        margin: auto;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 14px 0px;
+    }
+
+    .descriptionDroite {
+        float: right;
+        max-width: 60%;
+    }
+
+    .tuileProjet {
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: stretch;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: auto;
+        margin-block-start: 1rem;
+        margin-block-end: 5rem;
+        clear: both;
+    }
+
+    .tuileProjet .description {
+        display: flex;
+        align-items: stretch;
+        align-content: stretch;
+        justify-content: start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1;
+    }
+
+    .tuileProjet .description .titre {
+        font-size: 1.5rem;
+        text-transform: none;
+        font-weight: 700;
+        margin-block-end: 0.5rem;
+    }
+
+    .tuileProjet .description .taglist{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .tuileProjet .description .taglist .tag {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #4eace9;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+        float: left;
+        display: flex;
+        flex: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: stretch;
+        justify-content: start;
+    }
+
+    .tuileProjet .bouton {
+        font-size: 1rem;
+        font-weight: 600;
+        width: fit-content;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: #202020;
+        color: white;
+        border-radius: 2px;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+    }
+
+    .tuileProjet img {
+        float: left;
+    }
+
+    .tuileProjet .description .label {
+        margin-block-start: 0.5rem;
+        margin-block-end: 1rem;
+    }
+
+    .projets {
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+    }
+
+    /* Header */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255, 0.8);
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(8px);
+    }
+
+    li a {
+        display: block;
+        color: #202020;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    li .separateur {
+        display: block;
+        color: #202020;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        font-weight: 800;
+    }
+
+    li {
+        float: right;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        display: block;
+        margin: 16px;
+    }
+
+    .logo {
+        display: none;
+        visibility: hidden;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 14px 0px;
+    }
+
+    .descriptionDroite {
+        float: left;
+        max-width: 100%;
+    }
+
+    .tuileProjet {
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: stretch;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: auto;
+        margin-block-start: 1rem;
+        margin-block-end: 5rem;
+        clear: both;
+    }
+
+    .tuileProjet .description {
+        display: flex;
+        align-items: stretch;
+        align-content: stretch;
+        justify-content: start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1;
+    }
+
+    .tuileProjet .description .titre {
+        font-size: 1.5rem;
+        text-transform: none;
+        font-weight: 700;
+        margin-block-end: 0.5rem;
+    }
+
+    .tuileProjet .description .taglist{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .tuileProjet .description .taglist .tag {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #4eace9;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+        float: left;
+        display: flex;
+        flex: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: stretch;
+        justify-content: start;
+    }
+
+    .tuileProjet .bouton {
+        font-size: 1rem;
+        font-weight: 600;
+        width: fit-content;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: #202020;
+        color: white;
+        border-radius: 2px;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+    }
+
+    .tuileProjet img {
+        max-width: 50%;
+        float: left;
+    }
+
+    .tuileProjet .description .label {
+        margin-block-start: 0.5rem;
+        margin-block-end: 1rem;
+    }
+
+    .projets {
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+    }
+    /* Header */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255, 0.8);
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(8px);
+    }
+
+    li a {
+        display: block;
+        color: #202020;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+
+    li .separateur {
+        display: block;
+        color: #202020;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 0.5rem;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        font-weight: 800;
+    }
+
+    li {
+        float: right;
+    }
+}
