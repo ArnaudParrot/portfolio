@@ -116,7 +116,7 @@
         margin-block-end: 0.5rem;
         float: left;
         display: flex;
-        flex: row;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         align-content: stretch;
@@ -192,6 +192,7 @@
 
     li a:hover {
         font-weight: 800;
+        cursor: pointer;
     }
 
     li {
@@ -309,7 +310,7 @@
         margin-block-end: 0.5rem;
         float: left;
         display: flex;
-        flex: row;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         align-content: stretch;
