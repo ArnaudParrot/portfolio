@@ -5,39 +5,6 @@
     line-height: 1.5;
 }
 
-/* Texte */
-h1 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-block-start: 2rem;
-    margin-block-end: 2rem;
-}
-
-h2 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.titre {
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.soustitre {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-block-end: 3rem;
-}
-
 .descriptionDroite {
     float: right;
     max-width: 50%;
@@ -50,18 +17,44 @@ h3 {
     clear: both;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-}
-
 @media screen and (min-width:768px) {
     body {
         display: block;
         max-width: 60%;
         margin: auto;
+    }
+
+    .titre {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .soustitre {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-block-end: 3rem;
+    }
+
+    /* Texte */
+    h1 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-block-start: 2rem;
+        margin-block-end: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
     }
 
     .logo {
@@ -197,6 +190,14 @@ footer{
     li {
         float: right;
     }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+
 }
 
 
@@ -204,6 +205,41 @@ footer{
     body {
         display: block;
         margin: 16px;
+    }
+
+    .titre {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .soustitre {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-block-end: 3rem;
+        line-height: normal;
+    }
+
+    /* Texte */
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-block-start: 2rem;
+        margin-block-end: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
     }
 
     .logo {
@@ -320,7 +356,7 @@ footer{
         text-align: center;
         font-size: 1rem;
         font-weight: 500;
-        padding: 0.5rem;
+        padding: 1rem;
         text-decoration: none;
     }
 
@@ -330,7 +366,7 @@ footer{
         text-align: center;
         font-size: 1rem;
         font-weight: 600;
-        padding: 0.5rem 0.5rem;
+        padding: 1rem 0.5rem;
         text-decoration: none;
     }
 
@@ -341,4 +377,18 @@ footer{
     li {
         float: right;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
 }
