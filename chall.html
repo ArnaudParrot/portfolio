@@ -2,22 +2,23 @@
 <html lang="fr">
 <head>
     <title>Portfolio Arnaud Parrot</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
           type="text/css">
+    <script src="index.js"></script>
 </head>
 <body>
 <ul>
 
     <li><a>Photographie</a></li>
     <li>
-        <div class="separateur">/ </div>
+        <div class="separateur">/</div>
     </li>
     <li><a>CV</a></li>
     <li>
-        <div class="separateur">/ </div>
+        <div class="separateur">/</div>
     </li>
     <li><a>Projets</a></li>
     <li style="float: left;">
@@ -32,13 +33,15 @@
         <div class="tag">Product design</div>
     </div>
     <svg height="16" width="100%">
-        <line x1="0" y1="0" x2="400" y2="0" style="stroke:black;stroke-width:4" />
+        <line x1="0" y1="0" x2="400" y2="0" style="stroke:black;stroke-width:4"/>
     </svg>
     <div><p><b>Logiciel employé:</b> Figma</p>
-    <p><b>Méthodologie:</b> LeanUX</p></div>
-    <div class ="texte-container">
+        <p><b>Méthodologie:</b> LeanUX</p>
+    </div>
+    <div>
         <h2>Contexte du challenge</h2>
-        <p>Afin d'améliorer mes compétences en UI design, j'ai participé au challenge proposé mar Michal Malewicz sur son site hype4.academy qui consiste en la réalisation de 90 designs en 90 jours au rythme de 1 par jour.</p>
+        <p>Afin d'améliorer mes compétences en UI design, j'ai participé au challenge proposé mar Michal Malewicz sur
+            son site hype4.academy qui consiste en la réalisation de 90 designs en 90 jours au rythme de 1 par jour.</p>
         <p>Le but de ce challenge est multiple<br>
             - Comprendre rapidement un sujet et pouvoir le contextualiser<br>
             - Brainstormer et travailler ma créativité<br>
@@ -46,10 +49,91 @@
             - Maitrîser l'outil Figma</p>
         <h2>Quelques exemples</h2>
         <h3>Page d'invitation à une application</h3>
-        <img src="media/challenge/climb.png" class="responsive">
-        <img src="media/challenge/faq.png" class="responsive">
-        <p></p>
     </div>
+    <div class="img-container"><img id="climb" src="media/challenge/climb.png" class="responsive" onclick="openImg(id)">
+    </div>
+    <div>
+        <p>Pour la réalisation d'une page d'invitation pour une application, je suis parti du contexte de l'invitation à
+            l'application d'escalade.</p>
+        <p>J'ai décidé de renforcer l'aspect communautaire en raison de la pratique sportive de l'escalade. Le respect
+            des couleurs de la salle d'escalade (Climingdistrict.com) ainsi qu'un design friendly basé sur du brutalisme
+            constitue la base de ce que je souhaitais réaliser.</p>
+        <p>Le message est focalisé sur le côté amical pour donner envie à l'utilisateur de rejoindre cet application et
+            par extension l'environnement de la salle.</p>
+        <p>Les boutons doivent être clairs et le bouton de refus doit laisser à l'utilisateur l'idée de ce dire qu'il
+            pourra rejoindre l'application plus tard quand il voudra.</p>
+        <h3>Design d'une page F.A.Q</h3>
+    </div>
+    <div class="img-container"><img id="faq" src="media/challenge/faq.png" class="responsive" onclick="openImg(id)">
+    </div>
+    <div>
+        <p>Pour la page de la FAQ, je me suis posé deux questions. A qui s'adresse la FAQ? Comment rendre la navigation
+            fluide dans un contexte dense?</p>
+        <p>J'ai décidé de faire deux modèles pour cette page, une plus simple, basée sur l'idée qu'il y a peu d'items et
+            donc que le scroll ne serait pas problématique, et une plus chargée où il y aurait plus d'éléments à
+            chercher.</p>
+        <p>Dans le cas de la FAQ simple, je suis resté sur un modèle simplifié avec des encarts cliquables avec une
+            description de l'encart.</p>
+        <p>Dans le cas de la FAQ complexe, j'ai préféré miser sur la recherche par mots-clés ainsi que sur la présence
+            de filtres de recherches en amont de la page.</p>
+        <h3>Page résumé d'une application bancaire</h3>
+    </div>
+    <div class="img-container"><img id="banque" src="media/challenge/banque.png" class="responsive"
+                                    onclick="openImg(id)"></div>
+    <div>
+        <p>
+            Les applications bancaires sont des applications qui nécessitent beaucoup de clareté pour que
+            l'utilisateur ne soit pas perdu. Il faut jongler avec plusieurs cas d'utilisation et pour ce challenge,
+            je me suis basé sur mon application et ce que j'apprécie et n'apprécie pas.
+        </p>
+        <p>
+            J'ai voulu rendre un peu plus aéré la liste des transactions et jouer sur le côté encarts multiples pour
+            les différents comptes.
+        </p>
+        <p>
+            J'ai repris l'idée d'avoir des dépenses regroupées par catégories avec des pictos spécifiques à partir
+            du moment où ça a du sens.
+        </p>
+        <p>
+            J'ai limité le nombre d'icônes dans la tap-bar à un certains nombre d'actions clés pour ne pas
+            surcharger les possibilités dans le menu et perdre l'utilisateur
+        </p>
+        <p>
+            Concernant la typographie, j'ai choisi quelque chose de rond et plutôt chaleureux, en opposition aux
+            applications bancaires qui restent dans des polices plus sérieuses. J'en ai profité pour mettre des
+            couleurs pastels pour continuer à rendre l'application plus amicale alors que l'utilisateur regarde
+            quand même ses comptes.
+        </p>
+        <h3>Tunnel de paiement et livraison</h3>
+    </div>
+    <div class="img-container"><img id="tunnel" src="media/challenge/tunnel.png" class="responsive"
+                                    onclick="openImg(id)">
+    </div>
+    <div>
+        <p>Pour le tunnel de paiement & livraison, j'ai préféré miser sur la sobriété et le minimalisme avec une page en
+            monochrome avec des nuances de gris dans le stepper. La police choisie permet d'atténuer le côté minimaliste
+            du design et contribue à la clareté des actions en cours.</p>
+        <p>J'ai préféré adapter le wireframe en y intégrant un stepper pour ajouter plus de contexte. Cette partie me
+            paraît importante dans le cadre d'un tunnel de paiement & réservation pour voir à la fois d'où tu viens et
+            où tu vas.</p>
+        <p>L'action retour en haut est plus à destination des utilisateurs iOS là où les utilisateurs d'androïd ont la
+            navigation gestuelle.</p>
+        <p>Je différencie l'action retour avec le bouton d'action secondaire en explicitant qu'annuler ici permet de
+            sortir du parcours et non pas de revenir une étape en arrière.</p>
+    </div>
+
 </div>
+
+<footer>
+    <p>Ce portfolio a été designé sur Penpot
+        <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="Penpot"
+             xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M4.415,7.22a.755.755,0,0,0-.35.64v9.67a1.536,1.536,0,0,0,.88,1.38l5.96,2.82a2.618,2.618,0,0,0,2.19,0l5.96-2.82a1.536,1.536,0,0,0,.88-1.38V7.86a.742.742,0,0,0-.36-.64l-2.23-1.15v-1a.98.98,0,0,0-.15-.52l-1.33-2.16a.749.749,0,0,0-1.28,0L13.3,4.5l-.66-1.07A.755.755,0,0,0,12,3.08a.791.791,0,0,0-.64.36l-.65,1.06L9.4,2.39a.749.749,0,0,0-1.28,0L6.805,4.55a.98.98,0,0,0-.15.52v1Zm12.93-.01.7.35-.7.33Zm-2.44-3.43h.64l.5.81h-1.64Zm1.44,1.81V8.36l-.61.29V5.59Zm-2.23,0h.62V9.12l-.62.3ZM8.445,3.78h.64l.5.81H7.945Zm1.44,1.81V9.41l-.61-.29V5.59Zm-2.23,0h.62V8.65l-.62-.29Zm-1,1.62v.68l-.7-.33ZM5.365,18a.52.52,0,0,1-.3-.47V8.24l6.43,3.04v9.59Zm6.13-7.83-.61-.29V6.64h.61Zm-.32-4.53.51-.82h.62l.51.82Zm1.94,1V9.89l-.62.29V6.64ZM12.5,20.88V11.29l6.44-3.05v9.29a.512.512,0,0,1-.31.47Z"/>
+        </svg>
+        et réalisé par mes soins
+    </p>
+</footer>
+
 </body>
 </html>
