@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Portfolio Arnaud Parrot</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="/media/favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
+          type="text/css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+<ul>
+
+    <li><a>Photographie</a></li>
+    <li>
+        <div class="separateur">/</div>
+    </li>
+    <li><a>CV</a></li>
+    <li>
+        <div class="separateur">/</div>
+    </li>
+    <li><a href="index.html">Projets</a></li>
+    <li style="float: left;">
+        <div class="logo" onclick="location.href='index.html'">ARNAUD PARROT</div>
+    </li>
+</ul>
+
+<div class="corps">
+    <h1>Étude du design système de l'état en 48h</h1>
+    <div class="tag-container">
+        <div class="tag">Challenge</div>
+        <div class="tag">Product design</div>
+    </div>
+    <svg height="16" width="100%">
+        <line x1="0" y1="0" x2="400" y2="0" style="stroke:black;stroke-width:4"/>
+    </svg>
+    <div><p><b>Logiciel employé:</b> Figma, Figjam</p>
+        <p><b>Méthodologie:</b> LeanUX, Benchmark, Wireframing, UX journey, Persona, Interview utilisateurs</p>
+    </div>
+    <div>
+        <h2>Contexte du challenge</h2>
+        <p>Dans le cadre de ma formation UX, j'ai eu à réaliser un projet de A à Z en solitaire en 48 heures. La
+            consigne était de concevoir une application de réservation de terrain de sport en se utilisant le design
+            system de l'état français. Aucune autre consigne n'était donnée et une présentation était à réaliser à
+            l'issue des 48h (support non obligatoire).</p>
+        <p>Le but de ce challenge est multiple<br>
+            - Définir une problématique<br>
+            - Concevoir une application qui répond à la fois à un besoin utilisateur et un besoin d'activité<br>
+            - Être capable de s'approprier un design system existant et le modifier si besoin<br>
+            - Confirmer la maitrise de Figma</p>
+        <h2>UX Research</h2>
+        <h3>Interview utilisateurs</h3>
+        <p>Mon objectif premier était de définir une problématique. Pour ce faire, j'avais besoin de matière, n'ayant
+            jamais réservé de terrain de sport sur aucun site par moi-même. J'ai la chance d'avoir des amis qui eux, ont
+            l'habitude d'en faire. J'ai donc commencé par appeler 3 personnes et je leur ait demandé de me raconter leur
+            expérience.</p>
+        <p>Les interviews m'ont permis de voir plus clair sur la problématique à laquelle répondre et les points de
+            frictions rencontrés lors de la réservation d'un terrain sportif. J'en ai donc profité pour réaliser des UX
+            map et des persona, les 3 personnes m'ayant donné des visions différentes et des usages différents pour la
+            réservation de terrain.</p>
+        <div class="img-container"><img id="persona" src="media/etat/persona.png" class="responsive"
+                                        onclick="openImg(id)">
+        </div>
+        <div class="img-container"><img id="map" src="media/etat/map.png" class="responsive" onclick="openImg(id)">
+        </div>
+        <h3>Benchmarking</h3>
+        <p>Une fois cette partie terminée, j'avais besoin de moi même regarder les différents sites de réservation de
+            terrain de sport en ligne. En me basant sur mes interviews, je me suis renseigné sur les différents moyens à
+            ma disposition: privé, publique, associatif...</p>
+        <p>Cette recherche personnelle m'a permis de faire du benchmarking d'applications diverses à la fois côté
+            desktop et à la fois côté mobile.</p>
+        <div class="img-container"><img id="bench" src="media/etat/bench.png" class="responsive" onclick="openImg(id)">
+        </div>
+        <p>A la fin de cette première séquence de recherche, j'ai pu déterminer que le plus simple serait de partir sur
+            une application plutôt orientée mobile dans un premier temps pour deux raisons: les 3 personnes interrogées
+            m'ont avoué ne jamais vraiment utiliser le PC pour ce genre d'activité et c'est toujours quelque chose
+            qu'ils peuvent décider à la volée, par exemple en discutant autour d'un verre.</p>
+        <h2>Design UI</h2>
+        <h3>Wireframing</h3>
+        <p>J'ai commencé par du wireframing classique, papier crayon, pas de limite de temps préalable. À ce stade, je
+            n'avais pas encore regardé non plus le design system de l'état afin d'éviter de voir les choses de manière
+            trop précises à ce stade.</p>
+        <div class="img-container"><img id="wireframe" src="media/etat/wireframe.png" class="responsive"
+                                        onclick="openImg(id)">
+        </div>
+        <p>A ce stade, beaucoup d'aller-retours avec l'UX map ont été faits pour vérifier que le design répondait à la
+            fois au besoin utilisateur et à la fois au besoin de l'activité en elle-même. </p>
+        <p>La plupart des fonctionnalités du wireframe sont simplifiées pour se concentrer sur le parcours et la
+            hiérarchisation des éléments et non sur les subtilités de l'application. </p>
+        <h3>Passage en haute fidélité</h3>
+        <p>La plupart des composants que j'ai utilisés lors de la création du parcours sont des composants existants.
+            J'ai du adapter certains composants pour afficher les détails nécessaires</p>
+        <div class="img-container"><img id="garde" src="media/etat/garde.png" class="responsive" onclick="openImg(id)">
+        </div>
+        <p>Certains compostans sont complètement crées de toutes pièces. Le défi était de respecter le design system de
+            l'état.</p>
+        <p>Cet exercice m'a permis d'être critique sur certains choix de designs réalisés. Je ne suis pas par exemple
+            convaincu de l'emploi des couleurs, notamment sur l'item sélectionné qui me paraît trop lumineux. </p>
+        <div class="img-container"><img id="component1" src="media/etat/component1.png" class="responsive"
+                                        onclick="openImg(id)">
+        </div>
+        <p>Une problématique dont mes utilisateurs interviewés m'ont aussi parlé, et que je retrouve dans beaucoup de
+            projets, c'est
+            que la création d'un compte lors d'un processus de réservation est toujours une opération irritante et
+            source d'abandon de l'action.</p>
+        <div class="img-container"><img id="component2" src="media/etat/component2.png" class="responsive"
+                                        onclick="openImg(id)">
+        </div>
+        <p>Le component fabriqué permet de répondre à cette problématique. Même si l'idée de la création de compte est
+            une bonne idée, elle ne doit pas se faire au détriment de l'action utilisateur. D'un côté, si la personne
+            possède déjà un compte, elle peut se connecter et finaliser la réservation avec son compte. De l'autre, elle
+            a la possibilité de continuer sans compte voir de créer un compte.</p>
+        <p>Le texte permet d'expliquer l'intérêt de la création de compte à l'utilisateur et évite d'être intrusif et
+            perturbant dans le cadre d'une réservation d'un terrain de sport.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Ce portfolio a été designé sur Penpot
+        <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="Penpot"
+             xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M4.415,7.22a.755.755,0,0,0-.35.64v9.67a1.536,1.536,0,0,0,.88,1.38l5.96,2.82a2.618,2.618,0,0,0,2.19,0l5.96-2.82a1.536,1.536,0,0,0,.88-1.38V7.86a.742.742,0,0,0-.36-.64l-2.23-1.15v-1a.98.98,0,0,0-.15-.52l-1.33-2.16a.749.749,0,0,0-1.28,0L13.3,4.5l-.66-1.07A.755.755,0,0,0,12,3.08a.791.791,0,0,0-.64.36l-.65,1.06L9.4,2.39a.749.749,0,0,0-1.28,0L6.805,4.55a.98.98,0,0,0-.15.52v1Zm12.93-.01.7.35-.7.33Zm-2.44-3.43h.64l.5.81h-1.64Zm1.44,1.81V8.36l-.61.29V5.59Zm-2.23,0h.62V9.12l-.62.3ZM8.445,3.78h.64l.5.81H7.945Zm1.44,1.81V9.41l-.61-.29V5.59Zm-2.23,0h.62V8.65l-.62-.29Zm-1,1.62v.68l-.7-.33ZM5.365,18a.52.52,0,0,1-.3-.47V8.24l6.43,3.04v9.59Zm6.13-7.83-.61-.29V6.64h.61Zm-.32-4.53.51-.82h.62l.51.82Zm1.94,1V9.89l-.62.29V6.64ZM12.5,20.88V11.29l6.44-3.05v9.29a.512.512,0,0,1-.31.47Z"/>
+        </svg>
+        et codé par mes soins
+    </p>
+    <br>
+</footer>
+<div class="contact">
+    <a href="https://www.linkedin.com/in/arnaud-parrot-phd-7155b837/"><img src="media/linkedin.png"></a>
+</div>
+</body>
+</html>
