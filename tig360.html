@@ -4,15 +4,16 @@
     <title>Portfolio Arnaud Parrot</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="/media/favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
           type="text/css">
+    <script src="index.js"></script>
 </head>
 <body>
 
 <ul>
-
-    <li><a>Photographie</a></li>
+    <li><a href="photo.html">Photographie</a></li>
     <li>
         <div class="separateur">/</div>
     </li>
@@ -20,27 +21,120 @@
     <li>
         <div class="separateur">/</div>
     </li>
-    <li><a>Projets</a></li>
+    <li><a href="index.html">Projets</a></li>
     <li style="float: left;">
         <div class="logo" onclick="location.href='index.html'">ARNAUD PARROT</div>
     </li>
 </ul>
 
 <div class="corps">
-    <h1>Lorem Ipsum</h1>
-    <h2>Le passage de Lorem Ipsum standard, utilisé depuis 1500</h2>
-    <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit
-            anim id est laborum.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+    <h1>Tig360°</h1>
+    <div class="tag-container">
+        <div class="tag">Product design</div>
+        <div class="tag">Product owner</div>
+        <div class="tag">Product manager</div>
     </div>
+    <svg height="16" width="100%">
+        <line x1="0" y1="0" x2="400" y2="0" style="stroke:black;stroke-width:4"/>
+    </svg>
+    <div><p><b>Logiciel employé:</b> Figma, Draw.io, JIRA, Confluence, Office365</p>
+        <p><b>Méthodologie:</b> Crazy 8, Retours utilisateurs, Personna, LeanUX</p>
+    </div>
+    <h2>Contexte</h2>
+    <div>
+        <p>Les travaux d'intérêt généraux constituent une peine alternative aux peines d'emprisonnement et ont montré un
+            taux de réinsertion dans la société plus important que les autres peines.
+            Seulement, la gestion des structures pouvant accueillir ces travaux d'intérêt généraux ainsi que la gestion
+            des personnes sous écrou ne possédait pas de système informatisé. Chaque zone devait donc gérer ses propres
+            structures ainsi que le suivi des personnes sous écrou.</p>
+        <div class="img-container"><img alt="logo atigip" class="responsive" src="media/atigip/logo_ATIGIP.png"></div>
+        <p>Le but de ce projet est multiple: <br>
+            - Avoir un système informatisé permettant la gestion des structures d'accueil (localisation, certification,
+            recrutement etc)<br>
+            - Homogénéiser les procédures à l'échelle nationale<br>
+            - Faciliter les démarches auprès des différents acteurs (Avocats, Administration, Personne sous écrou,
+            Structure d'accueil)<br>
+            - Être moteur pour encourager le prononcé des peines de TIG comme alternative à la mise en détention.
+        </p>
+        <p>J'ai participé en tant que Product Owner / UX researcher à la conception de diverses fonctionnalités pour le
+            logiciel TIG360°
+            pour le ministère de la Justice. Je suis intervenu tant lors de la conception, en utilisant une approche UX
+            Research, que la réalisation et mise en production. Ce projet était réalisé avec une méthodologie SAFe.
+        </p>
+    </div>
+    <h2>Réalisations</h2>
+    <h3>Product Owner</h3>
+    <div>
+        <p>Mes premiers pas sur le projet consistaient en la conception fonctionnelle de l'application. Cela passe de
+            l'écriture d'US au testing des fonctionnalités et de la gestion des incidents de production. Au cours des
+            premiers mois, j'ai réalisé des maquettes sur powerpoint (comme la carte des structures d'accueil), en se
+            débrouillant au mieux pour répondre aux
+            besoins du métier.</p>
+        <div class="img-container"><img id="cartetig360" alt="carte des structures d'accueil" class="responsive"
+                                        src="media/atigip/carte.png" onclick="openImg(id)"></div>
+        <p>J'ai alors remarqué qu'une partie des fonctionnalités développées n'étaient pas utilisées, comme faisant un
+            appel du pied au principe de Pareto, et que nous n'avions pas une vision forcément très organisée des
+            différentes features.</p>
+        <p>C'est à ce même moment que j'ai découvert l'UX design. J'en ai profité pour suivre des formations et commencé
+            à intégrer les principes de l'UX design à notre propre projet.</p>
+    </div>
+    <h3>Product Designer</h3>
+    <div>
+        <p>J'ai commencé par redéfinir les différentes personnas attaché à notre métier. Chaque personna a pu être
+            alimenté via des retours utilisateurs et les interviews des personnes du métier. Les personna ont permis
+            d'avoir une vision un peu plus claire des utilisateurs ainsi que des attentes de chacun.
+        </p>
+        <p>La réalisation de sessions de retours utilisateurs (en visio, période de confinement oblige) organisées par
+            le metier nous a ouvert les yeux sur les pain points rencontrés et les features réellement attendues. J'ai
+            réalisé une customer journey map avec les différents parcours que nous devions mettre en place afin de ne
+            pas nous perdre sur les problèmes à résoudre.</p>
+        <p>J'ai poussé pour avoir un UI designer sur le projet afin de réaliser les maquettes et ainsi palier au manque
+            de compétences de l'équipe sur le sujet. A suivi une étroite collaboration entre le métier, le PM,
+            l'UI designer et moi-même.</p>
+        <p>Plusieurs ateliers de type Crazy 8 pour l'idéation ont eu lieu sur plusieurs parcours pour s'assurer de la
+            direction à prendre avec les nouvelles fonctionnalités. Toutes les fonctionnalités étaient regroupées sur
+            une mind map géante afin de nous éclairer sur ce qu'il restait à faire et mieux planifier les features. J'ai
+            mis en place la méthodologie Lean UX au sein du projet pour faciliter les prises des décisions et la
+            priorisation des besoins.</p>
+        <p>Ce projet est celui qui m'a ouvert les yeux sur le monde de l'UX design. Et si finalement ce n'était qu'une
+            suite logique au vu de ma carrière universitaire de chercheur? J'y ai retrouvé la même idée: Comprendre un
+            problème avant de lui trouver une solution qui lui correspond. Si la solution ne correspond pas, alors
+            réitérer en s'adaptant jusqu'à trouver quelque chose qui y répond.</p>
+        <p>Tout prend un sens à partir du moment où les données sont là pour consolider notre vision. La dimension
+            humaine et empathique lors des interviews ou des retours utilisateurs est
+            fondamentale et plaisante dans un milieu aussi technique que la conception d'applications. Cela permet de
+            remettre vraiment l'utilisateur au centre du besoin.</p>
+    </div>
+    <h3>Product Manager</h3>
+    <div>
+        <p>Au cours du projet, la product manager a dû prendre congé. J'ai eu l'occasion de l'assister et de la soulager
+            d'une partie de ses tâches, allant de la rédaction des features à la priorisation de celles-ci. En
+            parallèle, j'ai continué mon travail de fond avec l'UI designer et le métier.</p>
+        <p>Cette montée en compétence m'a permis d'avoir une vision plus haute de la réalisation des fonctionnalités et
+            voir des "activités utilisateurs" plutôt que des fonctionnalités. Pour moi, l'activité utilisateur
+            correspond plus à l'objectif recherché d'un point de vue métier, là où la fonctionnalité se distingue sur le
+            plan de l'IHM et du parcours utilisateur. Ainsi, je pourrais dire qu'une activité utilisateur serait de
+            réserver un créneau pour qu'une personne ayant à réaliser un TIG puisse venir, là où la fonctionnalité
+            serait de réserver une date et un horaire sur un calendrier.</p>
+        <p>Cette distinction me paraît aussi essentielle en UX design pour permettre de prendre plus de hauteur par
+            rapport à ce que l'on souhaite implémenter et donc être sûr que la réalisation correspond bien à une
+            activité de l'utilisateur plus qu'une fonctionnalité dont l'utilisateur pourrait se servir.</p>
+    </div>
+</div>
+
+<footer>
+    <p>Ce portfolio a été designé sur Penpot
+        <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="Penpot"
+             xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M4.415,7.22a.755.755,0,0,0-.35.64v9.67a1.536,1.536,0,0,0,.88,1.38l5.96,2.82a2.618,2.618,0,0,0,2.19,0l5.96-2.82a1.536,1.536,0,0,0,.88-1.38V7.86a.742.742,0,0,0-.36-.64l-2.23-1.15v-1a.98.98,0,0,0-.15-.52l-1.33-2.16a.749.749,0,0,0-1.28,0L13.3,4.5l-.66-1.07A.755.755,0,0,0,12,3.08a.791.791,0,0,0-.64.36l-.65,1.06L9.4,2.39a.749.749,0,0,0-1.28,0L6.805,4.55a.98.98,0,0,0-.15.52v1Zm12.93-.01.7.35-.7.33Zm-2.44-3.43h.64l.5.81h-1.64Zm1.44,1.81V8.36l-.61.29V5.59Zm-2.23,0h.62V9.12l-.62.3ZM8.445,3.78h.64l.5.81H7.945Zm1.44,1.81V9.41l-.61-.29V5.59Zm-2.23,0h.62V8.65l-.62-.29Zm-1,1.62v.68l-.7-.33ZM5.365,18a.52.52,0,0,1-.3-.47V8.24l6.43,3.04v9.59Zm6.13-7.83-.61-.29V6.64h.61Zm-.32-4.53.51-.82h.62l.51.82Zm1.94,1V9.89l-.62.29V6.64ZM12.5,20.88V11.29l6.44-3.05v9.29a.512.512,0,0,1-.31.47Z"/>
+        </svg>
+        et codé par mes soins
+    </p>
+    <br>
+</footer>
+<div class="contact">
+    <a href="https://www.linkedin.com/in/arnaud-parrot-phd-7155b837/"><img alt="linkedin" src="media/linkedin.png"></a>
 </div>
 
 </body>
