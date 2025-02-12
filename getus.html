@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Portfolio Arnaud Parrot</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="/media/favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
+          type="text/css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+<ul>
+    <li><a href="photo.html">Photographie</a></li>
+    <li>
+        <div class="separateur">/</div>
+    </li>
+    <li><a>CV</a></li>
+    <li>
+        <div class="separateur">/</div>
+    </li>
+    <li><a href="index.html">Projets</a></li>
+    <li style="float: left;">
+        <div class="logo" onclick="location.href='index.html'">ARNAUD PARROT</div>
+    </li>
+</ul>
+
+<div class="corps">
+    <h1>Redesign d'une application de messagerie</h1>
+    <div class="tag-container">
+        <div class="tag">Product design</div>
+    </div>
+    <svg height="16" width="100%">
+        <line x1="0" y1="0" x2="400" y2="0" style="stroke:black;stroke-width:4"/>
+    </svg>
+    <div><p><b>Logiciel employé:</b> Figma</p>
+        <p><b>Méthodologie:</b> UX Design, UI Design</p>
+    </div>
+    <h2>Contexte</h2>
+    <div>
+        <p>Lors d'une mission, un collègue développeur m'a demandé de l'aide avec une application qu'il souhaite faire
+            sur son temps libre. Il m'a expliqué qu'il existait déjà des maquettes, mais qu'il avait besoin d'un avis
+            extérieur et de l'aide pour les réaliser, n'étant pas à l'aise avec Figma. J'ai donc accepté de lui apporter
+            mon aide en tant que designer UI et en l'interrogeant au mieux sur les intentions derrière l'application
+            sans remettre en question le principe ou les fonctionnalités.</p>
+        <p>Le concept de Getus est une application de messagerie anonyme pour entreprise permettant de discuter de
+            différents sujets à la fois en message direct mais aussi en message de groupes. Chaque personne est sous un
+            pseudonyme et peut rejoindre des conversations ouvertes ou être invité à des conversations fermées. Des
+            sondages peuvent être lancés soit au sein d'une conversation, soit au sein du réseau et rejoint par
+            n'importe qui ayant accès à ce réseau. L'idée principale derrière cette application est de relier de manière
+            sans filtre différentes personnes du milieu du travail et pouvoir échanger en toute anonymat sur sa
+            situation.</p>
+    </div>
+    <h2>Réalisations</h2>
+    <h3>Retravail des maquettes existantes</h3>
+    <div>
+        <p>Un des premiers détails du redesign, c'est qu'il n'existait pas de parcours utilisateur défini. L'idée de
+            quel sera l'écran principal n'était pas défini. De la même façon, une identité visuelle n'était pas
+            existante, que ça soit pour la typographie, les icônes ou le choix des couleurs à appliquer.</p>
+        <p>La plupart des icônes étaient prises au hasard et la plupart des images étaient circulaires. Pour rester sur
+            un côté plus "sérieux", j'ai proposé de mettre des images arrondies plutôt que circulaires. La normalisation
+            des icônes en utilisant celle de Google Material me semblait un choix plutôt évident pour avoir une
+            bibliothèque étendue et facile d'accès.</p>
+    </div>
+    <div class="img-container"><img alt="écran principal" id="principal" src="media/getus/principal.png" class="responsive"
+                                    onclick="openImg(id)"></div>
+    <div>
+        <p>Je suis resté sur la typographie Roboto comme typographie standard, elle a une image chaleureuse tout en
+            restant sérieuse. Cette typographie efficace et lisible me paraît être un choix adapté pour une première
+            identité visuelle d'une application de messagerie plutôt axée entreprise.</p>
+        <p>En me basant sur différentes applications de messageries, la page principale sur laquelle on doit arriver
+            doit être la page avec tous les groupes de discussions et la possibilité de changer de contenu. Pour cela,
+            je suis resté fidèle au design proposé avec la mécanique d'onglets pour jongler entre les groupes auxquels
+            on appartient, les messages privés, les appels et les sondages.</p>
+        <p>Étant donné qu'il serait possible de rejoindre des groupes ouverts, j'ai rajouté une fonction recherche, qui
+            servira aussi de recherche au sein des conversations déjà disponibles. Le rajout du menu burger permet
+            d'effectuer d'autres types d'actions comme la suppression de messages ou d'aller dans les paramètres de
+            l'application.</p>
+        <p>Les groupes de conversation privés doivent apparaître clairement depuis cet écran pour éviter toute confusion
+            dans les conversations affichées à l'utilisateur, de même pour montrer que de nouveaux messages sont
+            présents.</p>
+    </div>
+    <div class="img-container"><img alt="Groupes de conversation" id="groupe" src="media/getus/groupe.png" class="responsive"
+                                    onclick="openImg(id)"></div>
+    <div>
+        <p>En m'inspirant des applications de messagerie existantes (Whatsapp, Signal...) j'ai redesigné les messages de
+            groupe. J'ai rajouté la photo de profil sur le côté ainsi que le pseudonyme, arrondi les angles sauf un pour
+            donner un sentiment de bulle de dialogue. J'ai rajouté des couleurs différentes en fonction de la personne
+            (ce qui n'est probablement pas le meilleur des choix dans une conversation à 6+ personnes où ça peut vite
+            devenir une farandole de couleur) pour avoir un peu plus de clareté. La barre d'écriture a été repensée pour
+            être plus arrondie que sous forme de gélule pour coller au reste de l'esthétique arrondi et plus
+            circulaire.</p>
+        <p>J'ai enlevé la possiblité d'envoyer rapidement une pièce-jointe pour mettre à la place l'envoi d'un message
+            vocal, ce qui correspond de plus en plus aux usages de certaines messageries (même si contredisant le
+            concept d'anonymat sur l'application). L'ajout de fichiers ou de sondages se fait via le bouton + pour
+            accéder aux ajouts internes à la conversation.</p>
+    </div>
+    <div class="img-container"><img alt="Ajout interne à la conversation" id="ajout" src="media/getus/ajout.png" class="responsive"
+                                    onclick="openImg(id)"></div>
+    <div>
+        <p>Pour l'ajout d'éléments dans une conversation, j'ai posé la question autour de moi pour savoir ce qu'ils en
+            pensaient entre avoir une modale permettant de choisir un élément ou avoir un menu contextuel qui n'est pas
+            une surcouche. La réponse qui est revenue plus souvent c'est que c'est jamais pratique de ne plus avoir
+            accès à la conversation en arrière-plan ou que la modale assombrisse le reste de l'écran. J'ai donc penché
+            pour un menu contextuel qui viendrait se mettre en dessous pour ne pas gêner la lecture des derniers
+            messages.</p>
+        <p>Pour aller plus vite dans la sélection d'images, j'ai prévu un carousel avec les dernières images
+            enregistrées sur le téléphone permettant d'économiser du temps pour l'utilisateur. Il est toujours possible
+            d'aller dans la gallerie pour sélectionner une image en particulier.</p>
+    </div>
+    <div class="img-container"><img alt="Sondage dans l'application" id="sondage" src="media/getus/sondage.png" class="responsive"
+                                    onclick="openImg(id)"></div>
+    <div>
+        <p>Le cœur de mon travail sur l'application était surtout de leur proposer une maquette pour l'ajout d'une
+            partie sondage sur l'application. Plusieurs indications visuelles sont mises en avant dans l'onglet de
+            sondage. Les indications de couleur pour voir les sondages auxquels on a répondu ainsi qu'une pastille
+            permettant de voir le statut d'un sondage.</p>
+        <p>Dans une version plus complète, j'ai proposé d'avoir des sondages avec des catégories et donc la possibilité
+            de filtrer les différents sondages. Dans une version MVP, une autre maquette existe sans ces critères de
+            filtres et ainsi de catégories dans le sondage.</p>
+    </div>
+</div>
+
+<footer>
+    <p>Ce portfolio a été designé sur Penpot
+        <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="Penpot"
+             xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M4.415,7.22a.755.755,0,0,0-.35.64v9.67a1.536,1.536,0,0,0,.88,1.38l5.96,2.82a2.618,2.618,0,0,0,2.19,0l5.96-2.82a1.536,1.536,0,0,0,.88-1.38V7.86a.742.742,0,0,0-.36-.64l-2.23-1.15v-1a.98.98,0,0,0-.15-.52l-1.33-2.16a.749.749,0,0,0-1.28,0L13.3,4.5l-.66-1.07A.755.755,0,0,0,12,3.08a.791.791,0,0,0-.64.36l-.65,1.06L9.4,2.39a.749.749,0,0,0-1.28,0L6.805,4.55a.98.98,0,0,0-.15.52v1Zm12.93-.01.7.35-.7.33Zm-2.44-3.43h.64l.5.81h-1.64Zm1.44,1.81V8.36l-.61.29V5.59Zm-2.23,0h.62V9.12l-.62.3ZM8.445,3.78h.64l.5.81H7.945Zm1.44,1.81V9.41l-.61-.29V5.59Zm-2.23,0h.62V8.65l-.62-.29Zm-1,1.62v.68l-.7-.33ZM5.365,18a.52.52,0,0,1-.3-.47V8.24l6.43,3.04v9.59Zm6.13-7.83-.61-.29V6.64h.61Zm-.32-4.53.51-.82h.62l.51.82Zm1.94,1V9.89l-.62.29V6.64ZM12.5,20.88V11.29l6.44-3.05v9.29a.512.512,0,0,1-.31.47Z"/>
+        </svg>
+        et codé par mes soins
+    </p>
+    <br>
+</footer>
+<div class="contact">
+    <a href="https://www.linkedin.com/in/arnaud-parrot-phd-7155b837/"><img alt="linkedin" src="media/linkedin.png"></a>
+</div>
+
+</body>
+</html>
